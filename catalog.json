@@ -1,22 +1,226 @@
 {
-    "schema_version": 1,
-    "modules": [
-        {
-            "id": "menus",
-            "name": "Menus",
-            "package": "ekagent/menus",
-            "description": "Yönetilebilir çok seviyeli ziyaretçi menüleri",
-            "version": "0.1.0",
-            "author": "ekagent",
-            "requires": {
-                "php": "^8.4",
-                "laravel": "^13.0",
-                "modules": {}
-            },
-            "download": {
-                "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/menus-v0.1.0/Menus-v0.1.0.zip",
-                "sha256": "695c5e344cb2ec941ea3354cae2971707c48e69d9e920cab939ed9ac042a27a6"
-            }
-        }
-    ]
+  "schema_version": 1,
+  "modules": [
+    {
+      "id": "menus",
+      "name": "Menus",
+      "package": "ekagent/menus",
+      "description": "Yönetilebilir çok seviyeli ziyaretçi menüleri",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/menus-v0.1.0/Menus-v0.1.0.zip",
+        "sha256": "695c5e344cb2ec941ea3354cae2971707c48e69d9e920cab939ed9ac042a27a6"
+      }
+    },
+    {
+      "id": "blog",
+      "name": "Blog",
+      "package": "ekagent/blog",
+      "description": "Blog, haber ve duyuru içeriklerinin yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/blog-v0.1.0/Blog-v0.1.0.zip",
+        "sha256": "b578a7db00b64f85b5278221478849b996d58d5d7a8c3f72fe6bade3409d1562"
+      }
+    },
+    {
+      "id": "brand",
+      "name": "Brand",
+      "package": "ekagent/brand",
+      "description": "Çalışılan markaların yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/brand-v0.1.0/Brand-v0.1.0.zip",
+        "sha256": "1b5c3e4305aec044c0de6b751cdc85ad42a2bd52cc12de4ee4cf293b2552746e"
+      }
+    },
+    {
+      "id": "documents",
+      "name": "Documents",
+      "package": "ekagent/documents",
+      "description": "Belgeler, sertifikalar, indirmeler ve ürün katalogları yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/documents-v0.1.0/Documents-v0.1.0.zip",
+        "sha256": "5be7324bcae3b12a7a15efbfc68f602b269ec919a8f6f4352cac4fe9b79778c4"
+      }
+    },
+    {
+      "id": "faqs",
+      "name": "Faqs",
+      "package": "ekagent/faqs",
+      "description": "Sıkça sorulan sorular ve kategoriler yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/faqs-v0.1.0/Faqs-v0.1.0.zip",
+        "sha256": "079a040cb6f4cd89a0d93230a435f83d2a9d8d3947536e5d4dd9084741083a8c"
+      }
+    },
+    {
+      "id": "galeriler",
+      "name": "Galeriler",
+      "package": "ekagent/galeriler",
+      "description": "Fotoğraf ve Video Galerisi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/galeriler-v0.1.0/Galeriler-v0.1.0.zip",
+        "sha256": "3c415b24880ecbd29f2fd4533063ec75c9f269e2569c90533b95062f1f04dd5d"
+      }
+    },
+    {
+      "id": "pages",
+      "name": "Pages",
+      "package": "ekagent/pages",
+      "description": "Sayfa ve sayfa kategorisi yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/pages-v0.1.0/Pages-v0.1.0.zip",
+        "sha256": "774574907d0270bb8c4a4188ed8319c29b36dfd3108585d3e4413f21c3defd93"
+      }
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "package": "ekagent/projects",
+      "description": "Projeler",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/projects-v0.1.0/Projects-v0.1.0.zip",
+        "sha256": "b90e0d8a284c768a74af317901478117779c40c5de8d60601fda5dc2a24a4be1"
+      }
+    },
+    {
+      "id": "sector",
+      "name": "Sector",
+      "package": "ekagent/sector",
+      "description": "Sektör yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/sector-v0.1.0/Sector-v0.1.0.zip",
+        "sha256": "c5e029f90533b34f304976c82ff09a0a6cdb6811c4b8ae70d0d22b5592f9c68a"
+      }
+    },
+    {
+      "id": "services",
+      "name": "Services",
+      "package": "ekagent/services",
+      "description": "Hizmet yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/services-v0.1.0/Services-v0.1.0.zip",
+        "sha256": "8a56442619dedbf23443e80b7ecdffce894da8a510fc09db59947416ddd4847a"
+      }
+    },
+    {
+      "id": "slider",
+      "name": "Slider",
+      "package": "ekagent/slider",
+      "description": "Slider yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/slider-v0.1.0/Slider-v0.1.0.zip",
+        "sha256": "c72f2fe8c571458b0f820a57ecf62dda6cb2ec50eebcce5b18bf549bdde82092"
+      }
+    },
+    {
+      "id": "team",
+      "name": "Team",
+      "package": "ekagent/team",
+      "description": "Ekip üyeleri yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/team-v0.1.0/Team-v0.1.0.zip",
+        "sha256": "07926f01cfbcf2b28ad4e81b2f541ae594d299c29311e48f53c3a6c9c3f700a9"
+      }
+    },
+    {
+      "id": "testimonials",
+      "name": "Testimonials",
+      "package": "ekagent/testimonials",
+      "description": "Müşteri yorumları ve başarı hikâyeleri yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/testimonials-v0.1.0/Testimonials-v0.1.0.zip",
+        "sha256": "dfb538ddeafae1c42d394d11fcd81e610f0d6a669a692e35a4ecf441ce3e810b"
+      }
+    }
+  ]
 }
