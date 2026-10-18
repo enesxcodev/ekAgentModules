@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "modules": [
+        {
+            "id": "menus",
+            "name": "Menus",
+            "package": "ekagent/menus",
+            "description": "Yönetilebilir çok seviyeli ziyaretçi menüleri",
+            "version": "0.1.0",
+            "author": "ekagent",
+            "requires": {
+                "php": "^8.4",
+                "laravel": "^13.0",
+                "modules": {}
+            },
+            "download": {
+                "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/menus-v0.1.0/Menus-v0.1.0.zip",
+                "sha256": "695c5e344cb2ec941ea3354cae2971707c48e69d9e920cab939ed9ac042a27a6"
+            }
+        }
+    ]
+}
