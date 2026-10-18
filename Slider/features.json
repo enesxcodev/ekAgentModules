@@ -1,0 +1,50 @@
+{
+    "schema_version": 1,
+    "forms": {
+        "slider": {
+            "label": "Ek slider alanları",
+            "fields": [
+                {
+                    "key": "background_image",
+                    "label": "Arka plan görseli",
+                    "description": "İsteğe bağlı ek görseli medya kütüphanesinden seçin.",
+                    "input_type": "image",
+                    "value_type": "media",
+                    "default_value": null,
+                    "validation": {
+                        "required": false,
+                        "extensions": ["jpg", "jpeg", "png", "webp"],
+                        "max_size": 4096
+                    }
+                },
+                {
+                    "key": "button_text",
+                    "label": "Buton metni",
+                    "input_type": "text",
+                    "value_type": "string",
+                    "default_value": null,
+                    "validation": {
+                        "required": false,
+                        "max": 80
+                    },
+                    "attributes": {
+                        "placeholder": "Örn. Detayları incele"
+                    }
+                },
+                {
+                    "key": "short_description",
+                    "label": "Kısa açıklama",
+                    "input_type": "textarea",
+                    "value_type": "string",
+                    "validation": {
+                        "required": false,
+                        "max": 180
+                    },
+                    "attributes": {
+                        "rows": 3
+                    }
+                }
+            ]
+        }
+    }
+}

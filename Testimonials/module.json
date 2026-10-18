@@ -1,0 +1,21 @@
+{
+    "name": "Testimonials",
+    "alias": "testimonials",
+    "version": "0.1.0",
+    "description": "Müşteri yorumları ve başarı hikâyeleri yönetimi",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Testimonials\\Providers\\TestimonialsServiceProvider"
+    ],
+    "files": [],
+    "panel": {
+        "permissions": [
+            "testimonials.menu",
+            "testimonials.view",
+            "testimonials.create",
+            "testimonials.update",
+            "testimonials.delete"
+        ]
+    }
+}

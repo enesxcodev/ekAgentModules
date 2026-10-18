@@ -1,0 +1,21 @@
+{
+    "name": "Brand",
+    "alias": "brand",
+    "version": "0.1.0",
+    "description": "Çalışılan markaların yönetimi",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Brand\\Providers\\BrandServiceProvider"
+    ],
+    "files": [],
+    "panel": {
+        "permissions": [
+            "brand.menu",
+            "brand.view",
+            "brand.create",
+            "brand.update",
+            "brand.delete"
+        ]
+    }
+}
