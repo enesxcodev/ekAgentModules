@@ -20,7 +20,7 @@
         @if ($canReorder)<p class="text-secondary mt-3 mb-0">Kartları sürükleyerek sıralayın. Sıra otomatik kaydedilir.</p>@endif
     </div></div>
     @if(auth('admin')->user()->canAny(['galeriler.update', 'galeriler.delete']))
-        <form id="galeriler-bulk" method="POST" action="{{ route('admin.galeriler.bulk') }}" data-confirm="Seçili kayıtlar için toplu işlemi uygulamak istediğinizden emin misiniz?" class="d-flex gap-2 mb-3 flex-wrap">
+        <form id="galeriler-bulk" method="POST" action="{{ route('admin.galeriler.bulk') }}" data-confirm-modal data-confirm-title="Toplu işlemi onayla" data-confirm-message="Seçili kayıtlar için toplu işlemi uygulamak istediğinizden emin misiniz?" data-confirm-button="Uygula" class="d-flex gap-2 mb-3 flex-wrap">
             @csrf
             <select name="action" class="form-select w-auto" aria-label="Toplu işlem">
                 @can('galeriler.update')<option value="move">Kategori değiştir</option>@endcan
@@ -37,7 +37,7 @@
                 <article class="card h-100">
                     <div class="ratio ratio-16x9 bg-secondary-lt overflow-hidden">
                         @if($item->type === 'photo' && $item->image_url)
-                            <img src="{{ $item->image_url }}" alt="{{ $item->title ?? $item->category->name }}" class="object-fit-cover" loading="lazy" draggable="false">
+                            <img src="{{ $item->image_url }}" alt="{{ $item->title ?? $item->category?->name ?? 'Galeri fotoğrafı' }}" class="object-fit-cover" loading="lazy" draggable="false">
                         @elseif($item->video && $item->video['thumbnail_url'])
                             <img src="{{ $item->video['thumbnail_url'] }}" alt="{{ $item->title ?? 'Video kapağı' }}" class="object-fit-cover" loading="lazy" draggable="false">
                         @elseif($item->video)
@@ -50,10 +50,10 @@
                             <span class="badge bg-blue-lt">{{ $item->type === 'photo' ? 'Fotoğraf' : 'Video' }}</span>
                         </div>
                         @if($item->title)<h3 class="card-title">{{ $item->title }}</h3>@endif
-                        <p class="text-secondary">{{ $item->category->name }}</p>
+                        <p class="text-secondary">{{ $item->category?->name ?? 'Kategorisiz' }}</p>
                         <div class="d-flex gap-2">
                             @can('galeriler.update')<a href="{{ route('admin.galeriler.edit', $item) }}" class="btn btn-sm btn-outline-primary">Düzenle</a>@endcan
-                            @can('galeriler.delete')<form method="POST" action="{{ route('admin.galeriler.destroy', $item) }}" data-confirm="Galeri kaydını silmek istediğinizden emin misiniz?">@csrf @method('DELETE')<button class="btn btn-sm btn-outline-danger">Sil</button></form>@endcan
+                            @can('galeriler.delete')<form method="POST" action="{{ route('admin.galeriler.destroy', $item) }}" data-confirm-modal data-confirm-title="Galeri kaydını sil" data-confirm-message="Galeri kaydını silmek istediğinizden emin misiniz?" data-confirm-button="Sil">@csrf @method('DELETE')<button class="btn btn-sm btn-outline-danger">Sil</button></form>@endcan
                         </div>
                     </div>
                 </article>
