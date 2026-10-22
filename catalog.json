@@ -289,6 +289,23 @@
         "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/konum-v0.1.0/Konum-v0.1.0.zip",
         "sha256": "395bb45c27bcf0cdde5c42113bde95cbab03691da68ac720c0d4d30b9ef95f74"
       }
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "package": "ekagent/store",
+      "description": "Satılabilir ürün, stok ve yerel sipariş yönetimi",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/store-v0.1.1/Store-v0.1.0.zip",
+        "sha256": "f0b235b3cc108ff7107ccc6dedbbb15d4b5e4192410495b7bddfc6633f9b7939"
+      }
     }
   ]
 }
