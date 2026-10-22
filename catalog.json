@@ -272,6 +272,23 @@
         "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/users-v0.1.0/Users-v0.1.0.zip",
         "sha256": "42ff9857e9d8ed228ea2e0693de0968358871e0b7a6d6608475aefc341815ebf"
       }
+    },
+    {
+      "id": "konum",
+      "name": "Konum",
+      "package": "ekagent/konum",
+      "description": "Türkiye il, ilçe, ara bölge, mahalle ve cadde/sokak referans verileri",
+      "version": "0.1.0",
+      "author": "ekagent",
+      "requires": {
+        "php": "^8.4",
+        "laravel": "^13.0",
+        "modules": {}
+      },
+      "download": {
+        "url": "https://github.com/enesxcodev/ekAgentModules/releases/download/konum-v0.1.0/Konum-v0.1.0.zip",
+        "sha256": "395bb45c27bcf0cdde5c42113bde95cbab03691da68ac720c0d4d30b9ef95f74"
+      }
     }
   ]
 }
